@@ -1,7 +1,28 @@
 import React from 'react'
-import './App.css'
-import Api from './Api/Api.js'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-function App() { return (<div> <Api/> </div>) }
+import './App.css'
+import Header from './Components/Header.js'
+import Home from './Components/Home.js'
+
+import Login from './Components/Login/Login.js'
+import Footer from './Components/Footer.js'
+
+function App() { 
+  return (
+    <div> 
+      <BrowserRouter>
+        <Header/>
+
+        <Routes>
+          <Route path='/' element={ <Home/> }/>
+          <Route path='/login/*' element={ <Login/> }></Route>
+        </Routes>
+
+        <Footer/>
+      </BrowserRouter>
+    </div>
+    ) 
+  }
 
 export default App

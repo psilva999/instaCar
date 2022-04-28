@@ -1,0 +1,47 @@
+header {
+  box-shadow:0 .05rem .05rem rgba(0,0,0,.3);
+  padding:1rem 0;
+  width:100vw;
+  position:fixed;
+  z-index:2;
+  top:0;
+  background:#f3f3f3;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #400;
+  font-size: 1.1rem;
+  transition: .3s;
+  opacity: .6;
+  border-radius: .3rem;
+  padding: .1rem .2rem;
+}
+
+.nav a:nth-child(2) {
+  border: .1rem solid black;
+}
+
+.nav a:hover {
+  opacity: 1;
+  transition: .3s;
+}
+
+.login {
+  display:flex;
+  align-items:center;
+}
+
+.login::after {
+  content:'';
+  display:inline-block;
+  width:2rem;
+  height:2rem;
+  background:url('../../Assets/user.svg') no-repeat center center;
+}
