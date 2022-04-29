@@ -7,19 +7,22 @@ import Home from './Components/Home.js'
 
 import Login from './Components/Login/Login.js'
 import Footer from './Components/Footer.js'
+import { UserStorage } from './UserContext.js'
 
 function App() { 
   return (
     <div> 
       <BrowserRouter>
-        <Header/>
+        <UserStorage>
+          <Header/>
 
-        <Routes>
-          <Route path='/' element={ <Home/> }/>
-          <Route path='/login/*' element={ <Login/> }></Route>
-        </Routes>
-
-        <Footer/>
+          <Routes>
+            <Route path='/' element={ <Home/> }/>
+            <Route path='/login/*' element={ <Login/> }></Route>
+          </Routes>
+          <Footer/>
+          
+        </UserStorage>
       </BrowserRouter>
     </div>
     ) 
