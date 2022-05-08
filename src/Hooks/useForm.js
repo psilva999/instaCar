@@ -4,6 +4,11 @@ const types = {
   email: { 
     regex: /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/,
     message: 'E-mail inválido'
+  },
+
+  password: {
+    regex: /^(?=.*\d)(?=.*[a-zA-Z])[a-zA-Z0-9]{7,}$/,
+    message: 'Escolha uma senha com pelo menos 6 caracteres'
   }
 }
 

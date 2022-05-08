@@ -7,6 +7,8 @@ import { UserContext } from '../../UserContext.js'
 import Button from '../Forms/Button.js'
 import Input from '../Forms/Input.js'
 
+import Error from '../Helper/Error.js'
+
 const LoginForm = () => {
   const username = useForm(),
         password = useForm(),
@@ -19,7 +21,7 @@ const LoginForm = () => {
   }
 
   return (
-    <section>
+    <section className='animeLeft'>
       <h1>Login Form</h1>
 
       <form action='' onSubmit={ handleSubmit }>
@@ -31,10 +33,17 @@ const LoginForm = () => {
           (<Button>ENTRAR</Button>)
         }
 
-        { error && <span>{ error }</span> }
+        <Error error={ error }/>
       </form>
+      
+      <Link to='/login/perdeu'>Perdeu a senha?</Link>
 
-      <Link to='/login/create'>Cadastros</Link>
+      <div>
+        <h2>Cadastre-se</h2>
+        <p>Ainda não possui conta? Cadastre-se no site</p>
+
+        <Link to='/login/create'>Cadastros</Link>
+      </div>
     </section>
   )
 }

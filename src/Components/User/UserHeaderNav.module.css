@@ -1,0 +1,7 @@
+.nav a:global(.active) {
+  background:transparent;
+}
+
+.nav a:global(.active) svg > * {
+  fill:#fb1;
+}
