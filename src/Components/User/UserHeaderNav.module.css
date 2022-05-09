@@ -5,3 +5,42 @@
 .nav a:global(.active) svg > * {
   fill:#fb1;
 }
+
+.mobileButton {
+  cursor:pointer;
+}
+
+.mobileButton::after {
+  content:'';
+  display:block;
+  width:1rem;
+  height:.3rem;
+  border-radius:.3rem;
+  box-shadow:0 .3rem black, 0 -.3rem black;
+  background:black;
+}
+
+.mobileButtonActive {
+  transform:rotate(90deg);
+  width:.1rem;
+  height:.1rem;
+  box-shadow:0rem .2rem black, 0rem .2rem black;
+}
+
+.navMobile {
+  display:none;
+  border:.3rem solid black;
+  width:40vw;
+  position:absolute;
+  top:10.5rem;
+  right:.7rem;
+}
+
+.navMobile a {
+  justify-self:center;
+}
+
+.navMobileActive {
+  z-index:100;
+  display:grid;
+}
