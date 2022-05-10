@@ -43,4 +43,5 @@
 .navMobileActive {
   z-index:100;
   display:grid;
+  background:#F2F2F2;
 }

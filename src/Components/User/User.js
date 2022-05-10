@@ -13,8 +13,8 @@ const User = () => {
 
         <Routes>
           <Route path='/' element={ <Feed/> }/>
-          <Route path='posta' element={ <UserPhotoPost/> }/>
           <Route path='estatisticas' element={ <UserStats/> }/>
+          <Route path='postar' element={ <UserPhotoPost/> }/>
         </Routes>
     </section>
   )

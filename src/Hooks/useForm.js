@@ -9,6 +9,11 @@ const types = {
   password: {
     regex: /^(?=.*\d)(?=.*[a-zA-Z])[a-zA-Z0-9]{7,}$/,
     message: 'Escolha uma senha com pelo menos 6 caracteres'
+  },
+
+  number: {
+    regex: /^\d+$/,
+    message: 'Somente números'
   }
 }
 

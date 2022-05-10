@@ -1,5 +1,5 @@
 import React from 'react'
-import { USER_POST } from '../../api.js'
+import { USER_POST } from '../../Api.js'
 
 import useFetch from '../../Hooks/useFetch.js'
 import Error from '../Helper/Error.js'

@@ -2,7 +2,7 @@ import React from 'react'
 
 const UserStats = () => {
   return (
-    <div>UserStats</div>
+    <div>UserStats teste</div>
   )
 }
 
